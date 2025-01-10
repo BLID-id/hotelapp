@@ -80,11 +80,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\BASTIEN\\Desktop\\HotelAPP\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
-      "projectName": "WebApplication1",
-      "projectPath": "C:\\Users\\BASTIEN\\Desktop\\HotelAPP\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+      "projectUniqueName": "C:\\Users\\BASTIEN\\Documents\\AAAAHotel\\HotelAPI\\HotelAPI\\HotelAPI.csproj",
+      "projectName": "HotelAPI",
+      "projectPath": "C:\\Users\\BASTIEN\\Documents\\AAAAHotel\\HotelAPI\\HotelAPI\\HotelAPI.csproj",
       "packagesPath": "C:\\Users\\BASTIEN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\BASTIEN\\Desktop\\HotelAPP\\WebApplication1\\WebApplication1\\obj\\",
+      "outputPath": "C:\\Users\\BASTIEN\\Documents\\AAAAHotel\\HotelAPI\\HotelAPI\\obj\\",
       "projectStyle": "PackageReference",
       "UsingMicrosoftNETSdk": false,
       "configFilePaths": [
