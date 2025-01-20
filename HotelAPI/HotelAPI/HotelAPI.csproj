@@ -14,13 +14,4 @@
         <PackageReference Include="Swashbuckle.AspNetCore" Version="7.2.0" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="API\Chambre\Chambre_DELETE\" />
-      <Folder Include="API\Chambre\Chambre_GET\" />
-      <Folder Include="API\Chambre\Chambre_PUT\" />
-      <Folder Include="API\TypesChambres\TypesChambres_GET\" />
-      <Folder Include="API\TypesChambres\TypesChambres_DELETE\" />
-      <Folder Include="API\TypesChambres\TypesChambres_PUT\" />
-    </ItemGroup>
-
 </Project>

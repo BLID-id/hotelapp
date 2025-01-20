@@ -5,7 +5,7 @@ namespace HotelAPI.API.Tarif
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class TarifsController : ControllerBase
+    public class TarifController : ControllerBase
     {
         [HttpPost]
         public IActionResult CreateTarif([FromBody] TarifPostData tarifData)
@@ -15,7 +15,7 @@ namespace HotelAPI.API.Tarif
                 return BadRequest(ModelState);
             }
 
-            var result = TarifPostService.TarifsAdd(tarifData);
+            var result = TarifPostService.TarifAdd(tarifData);
 
             return Ok(new { Message = result });
         }

@@ -5,7 +5,7 @@ namespace HotelAPI.API.Tarif.Tarif_POST
 {
     public static class TarifPostService
     {
-        public static string TarifsAdd(TarifPostData data)
+        public static string TarifAdd(TarifPostData data)
         {
             using var connection = SqlConnection.GetConnection();
             if (connection.State != System.Data.ConnectionState.Open)

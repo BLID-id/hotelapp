@@ -14,8 +14,7 @@ namespace HotelAPI.API.Tarif.Tarif_POST
         [Range(0, double.MaxValue, ErrorMessage = "Le prix doit être un nombre positif.")]
         public decimal Prix { get; set; }
         
-        //TODO Default values
         [MaxLength(1000, ErrorMessage = "Les commentaires ne doivent pas dépasser 1000 caractères.")]
-        public string? Commentaires { get; set; }
+        public string? Commentaires { get; set; } = string.Empty;
     }
 }

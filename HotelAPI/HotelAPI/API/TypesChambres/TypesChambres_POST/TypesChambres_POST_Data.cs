@@ -29,8 +29,7 @@ namespace HotelAPI.API.TypesChambres.TypesChambres_POST
         [Range(1, short.MaxValue, ErrorMessage = "La capacité doit être au moins 1.")]
         public required short Capacite { get; set; }
 
-        //TODO Default values
         [MaxLength(1000, ErrorMessage = "Les commentaires ne peuvent pas dépasser 1000 caractères.")]
-        public string? Commentaires { get; set; }
+        public string? Commentaires { get; set; } = string.Empty;
     }
 }
