@@ -1,17 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
-
-public class Chambre_POST_Query
+﻿namespace HotelAPI.API.Chambre.Chambre_POST
 {
-    private readonly AppDbContext _context;
-
-    public Chambre_POST_Query(AppDbContext context)
+    public class ChambrePostQuery
     {
-        _context = context;
-    }
-
-    public async Task AddChambreAsync(Chambre chambre)
-    {
-        await _context.Chambres.AddAsync(chambre);
-        await _context.SaveChangesAsync();
+        public static string QueryPostChambre = "INSERT INTO chambres (chambreId, type_id, commentaires) VALUES ($1, $2, $3) RETURNING *;";
     }
 }
+

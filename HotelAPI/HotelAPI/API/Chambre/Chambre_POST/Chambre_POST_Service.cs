@@ -1,14 +1,44 @@
-﻿public class Chambre_POST_Service
+﻿using HotelAPI.API.SQL;
+using Npgsql;
+
+namespace HotelAPI.API.Chambre.Chambre_POST;
+
+public class ChambrePostService
 {
-    private readonly Chambre_POST_Query _query;
-
-    public Chambre_POST_Service(Chambre_POST_Query query)
+    public static string ChambreAdd(ChambrePostData chambrePostData)
     {
-        _query = query;
-    }
+        using (var connection = SqlConnection.GetConnection())
+        {
+            if (connection.State != System.Data.ConnectionState.Open)
+            {
+                connection.Open();
+            }
 
-    public async Task CreateChambreAsync(Chambre chambre)
-    {
-        await _query.AddChambreAsync(chambre);
+            string sqlCommande = ChambrePostQuery.QueryPostChambre;
+
+            using (var command = new NpgsqlCommand(sqlCommande, connection))
+            {
+                command.Parameters.AddWithValue("@chambreID", chambrePostData.ChambreId);
+                command.Parameters.AddWithValue("@type", chambrePostData.Type);
+                
+                try
+                {
+                    var result = command.ExecuteScalar();
+
+                    if (result != null)
+                    {
+                        return $"Chambre insérée avec succès: {result}";
+                    }
+                    else
+                    {
+                        return "Échec de l'insertion de la chambre.";
+                    }
+                }
+                catch (Exception ex)
+                {
+                    return $"Erreur lors de l'insertion : {ex.Message}";
+                }
+            }
+        }
     }
 }

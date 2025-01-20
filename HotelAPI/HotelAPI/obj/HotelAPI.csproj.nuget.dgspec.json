@@ -1,21 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\BASTIEN\\Desktop\\AppHotel\\HotelAPI\\HotelAPI\\HotelAPI.csproj": {}
+    "C:\\Users\\greno\\RiderProjects\\hotelapp\\HotelAPI\\HotelAPI\\HotelAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\BASTIEN\\Desktop\\AppHotel\\HotelAPI\\HotelAPI\\HotelAPI.csproj": {
+    "C:\\Users\\greno\\RiderProjects\\hotelapp\\HotelAPI\\HotelAPI\\HotelAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BASTIEN\\Desktop\\AppHotel\\HotelAPI\\HotelAPI\\HotelAPI.csproj",
+        "projectUniqueName": "C:\\Users\\greno\\RiderProjects\\hotelapp\\HotelAPI\\HotelAPI\\HotelAPI.csproj",
         "projectName": "HotelAPI",
-        "projectPath": "C:\\Users\\BASTIEN\\Desktop\\AppHotel\\HotelAPI\\HotelAPI\\HotelAPI.csproj",
-        "packagesPath": "C:\\Users\\BASTIEN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BASTIEN\\Desktop\\AppHotel\\HotelAPI\\HotelAPI\\obj\\",
+        "projectPath": "C:\\Users\\greno\\RiderProjects\\hotelapp\\HotelAPI\\HotelAPI\\HotelAPI.csproj",
+        "packagesPath": "C:\\Users\\greno\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\greno\\RiderProjects\\hotelapp\\HotelAPI\\HotelAPI\\obj\\",
         "projectStyle": "PackageReference",
-        "UsingMicrosoftNETSdk": false,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\BASTIEN\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\greno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -38,12 +41,17 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "all"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "DotNetEnv": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.0, )"
@@ -80,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\BASTIEN\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
