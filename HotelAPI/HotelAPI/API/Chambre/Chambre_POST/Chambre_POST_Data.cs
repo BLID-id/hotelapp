@@ -10,7 +10,8 @@ namespace HotelAPI.API.Chambre.Chambre_POST
         [Required]
         public int Type { get; set; } 
 
-        [MaxLength(500)]
+        //TODO Default values
+        [MaxLength(1000, ErrorMessage = "Les commentaires ne peuvent pas dépasser 1000 caractères.")]
         public string? Commentaires { get; set; }
     }
 }
